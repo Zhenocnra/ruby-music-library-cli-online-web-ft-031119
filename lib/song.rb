@@ -20,7 +20,7 @@ class Song
     @@all << self
   end
   
-  def create
+  def self.create(name)
     song = new(name)
     song.save
     song
